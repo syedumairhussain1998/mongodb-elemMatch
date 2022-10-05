@@ -5,3 +5,10 @@
   
   The following example queries for documents where the dim_cm array contains at least one element that is both
   greater than ($gt) 22 and less than ($lt) 30:
+
+
+This Query works the same way as below query
+
+const data = await Inventory.find({
+    $and: [{ dim_cm: { $gt: 22, $lt: 30 } }],
+  });
